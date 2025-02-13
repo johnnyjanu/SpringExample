@@ -17,5 +17,7 @@
  			,	`updatedAt`
  		FROM
  			`new_review`
+ 		WHERE
+ 			`id` = #{id}
  	</select>
  </mapper>
