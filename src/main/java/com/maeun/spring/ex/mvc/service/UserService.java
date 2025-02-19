@@ -21,6 +21,10 @@ public class UserService {
 		return userRepository.insertUser(name, birthday, email, introduce);
 	}
 	
+	public int addUserByObject(User user) {
+		return userRepository.insertUserByObject(user);
+	}
+	
 	public User getLastUser() {
 		return userRepository.selectLastUser();
 	}
